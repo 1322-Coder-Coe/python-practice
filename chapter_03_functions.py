@@ -320,29 +320,27 @@ The function should return: "Hello, <name>!"
 Test it in two ways:
 By giving a name
 By calling it with no argument
-"""
-def greet_user(Guest): 
-    if greet_user(Guest) == greet_user():
-        return "Hello," + " " + "Guest"
-    else:
-        x = "Hello, " + Guest + "!"
-        return x
+
+def greet_user(guest = "Guest"): 
+     return "Hello, " + guest + "!"
 
 print(greet_user("Evans"))
 print(greet_user())
-
-
 """
+"""
+
 Exercise 4: Keyword Arguments
 Write a function called describe_pet that takes two parameters: animal and name.
 It should return a sentence like: "I have a animal named name."
 Call the function using keyword arguments (not positional).
 
+def describe_pet(animal, name):
+    return "I have a " + animal + " named " + name + "."
 
+print(describe_pet(animal = "dog", name = "Poopy"))
 
-
-
-
+"""
+"""
 Exercise 5: Local vs Global (deeper)
 Create a global variable counter = 0.
 Write two functions:
@@ -350,21 +348,35 @@ increase() → adds 1 to the global counter
 show() → prints the current value of counter
 Call increase() three times, then call show().
 
+counter = 0 
 
+def increase():
+     global counter 
+     counter += 1
+     
 
+def show():
+    print(counter)
+    
+    
+increase()
+increase()
+increase()
+show()
+"""
 
-
-
+"""
 Exercise 6: Safe Division (Exception Handling)
 Write a function called safe_divide that takes two parameters: a and b.
 It should return a / b
 If division by zero happens, return the string "Cannot divide by zero"
 Test it with both normal numbers and with b = 0.
+"""
 
 
 
 
-
+"""
 Exercise 7: Combine Functions
 Write two functions:
 is_even(number) → returns True if the number is even, otherwise False
