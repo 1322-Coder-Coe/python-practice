@@ -372,6 +372,19 @@ It should return a / b
 If division by zero happens, return the string "Cannot divide by zero"
 Test it with both normal numbers and with b = 0.
 """
+def safe_divide(a,b):
+   try: 
+       return a/b
+   except ZeroDivisionError:
+    return "Cannot divide by zero"
+
+
+print(safe_divide(9,3))
+print(safe_divide(9,0))
+
+
+
+
 
 
 
