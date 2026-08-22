@@ -296,7 +296,7 @@ If temp > 30, return "Hot"
 If temp < 15, return "Cold"
 Otherwise return "Nice"
 Call the function three times with different values and print the results.
-"""
+
 def check_temperature(temp):
     if temp > 30: 
      return "Hot"
@@ -309,7 +309,7 @@ print(check_temperature(35))
 print(check_temperature(10))
 print(check_temperature(25))
 
-
+"""
 
 
 
@@ -320,12 +320,19 @@ The function should return: "Hello, <name>!"
 Test it in two ways:
 By giving a name
 By calling it with no argument
+"""
+def greet_user(Guest): 
+    if greet_user(Guest) == greet_user():
+        return "Hello," + " " + "Guest"
+    else:
+        x = "Hello, " + Guest + "!"
+        return x
+
+print(greet_user("Evans"))
+print(greet_user())
 
 
-
-
-
-
+"""
 Exercise 4: Keyword Arguments
 Write a function called describe_pet that takes two parameters: animal and name.
 It should return a sentence like: "I have a animal named name."
