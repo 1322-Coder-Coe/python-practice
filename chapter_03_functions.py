@@ -371,7 +371,7 @@ Write a function called safe_divide that takes two parameters: a and b.
 It should return a / b
 If division by zero happens, return the string "Cannot divide by zero"
 Test it with both normal numbers and with b = 0.
-"""
+
 def safe_divide(a,b):
    try: 
        return a/b
@@ -382,16 +382,29 @@ def safe_divide(a,b):
 print(safe_divide(9,3))
 print(safe_divide(9,0))
 
-
-
-
-
-
+"""
 
 
 """
 Exercise 7: Combine Functions
 Write two functions:
 is_even(number) → returns True if the number is even, otherwise False
+
 print_even_message(number) → calls is_even() and prints "Even" or "Odd"
 """
+
+
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+        
+def print_even_message(number):
+    if is_even(number) == True:
+        print("Even")
+    else:
+        print("Odd")
+    
+
+print_even_message(4)
