@@ -16,7 +16,7 @@ This file contains all practice exercises and solutions related to Chapter 3
 from the practice files submitted during learning.
 ===============================================================================
 """
-
+"""
 # -----------------------------------------------------------------------------
 # Step 1 (from Book_chp_3 practice.py)
 # Create a function called greet that prints two lines, then call it.
@@ -269,3 +269,97 @@ while user_num != 1:
 
 
 print("\n--- End of Chapter 3 practice exercises ---")
+
+__________________________________________________________________________
+Chapter 3 – Missing Important Exercises
+
+Exercise 1: Return, don’t print
+Write a function called get_full_name that takes two parameters: first and last.
+It should return the full name as a single string (with a space in between).
+Do not use print() inside the function.
+Then call the function and print the result outside.
+
+
+def get_full_name(first, last):
+    return first + " " + last
+
+get_full_name('John', 'Doe')
+print(get_full_name('John', 'Doe'))
+"""
+
+
+"""
+Exercise 2: Early Return
+
+Write a function called check_temperature that takes one parameter temp.
+If temp > 30, return "Hot"
+If temp < 15, return "Cold"
+Otherwise return "Nice"
+Call the function three times with different values and print the results.
+"""
+def check_temperature(temp):
+    if temp > 30: 
+     return "Hot"
+    if temp < 15: 
+     return "Cold"
+    else:
+        return "Nice"
+    
+print(check_temperature(35))
+print(check_temperature(10))
+print(check_temperature(25))
+
+
+
+
+
+"""
+Exercise 3: Default Parameter
+Write a function called greet_user that takes one parameter name with a default value of "Guest".
+The function should return: "Hello, <name>!"
+Test it in two ways:
+By giving a name
+By calling it with no argument
+
+
+
+
+
+
+Exercise 4: Keyword Arguments
+Write a function called describe_pet that takes two parameters: animal and name.
+It should return a sentence like: "I have a animal named name."
+Call the function using keyword arguments (not positional).
+
+
+
+
+
+
+Exercise 5: Local vs Global (deeper)
+Create a global variable counter = 0.
+Write two functions:
+increase() → adds 1 to the global counter
+show() → prints the current value of counter
+Call increase() three times, then call show().
+
+
+
+
+
+
+Exercise 6: Safe Division (Exception Handling)
+Write a function called safe_divide that takes two parameters: a and b.
+It should return a / b
+If division by zero happens, return the string "Cannot divide by zero"
+Test it with both normal numbers and with b = 0.
+
+
+
+
+
+Exercise 7: Combine Functions
+Write two functions:
+is_even(number) → returns True if the number is even, otherwise False
+print_even_message(number) → calls is_even() and prints "Even" or "Odd"
+"""
