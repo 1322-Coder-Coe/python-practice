@@ -93,10 +93,28 @@ Gemini Practice:
 # Task 1: Print the 3rd item in the list using positive indexing.
 # Task 2: Print the very last item using negative indexing.
 # Task 3: Change "cat" to "lion" and print the updated list.
-"""
+
 animals = ["dog", "cat", "bat", "elephant"]
 #Task 1:
 print(animals[2])
 print(animals[-1])
 animals[1] = "lion"
 print(animals)
+""" 
+"""
+_________________________________________________________________________
+Missing Practice 1:
+
+Create a list of numbers from 0 to 9:
+Then do the following:
+Print the first 4 numbers (using slicing)
+Print the last 3 numbers (using slicing)
+Print the numbers from index 2 to 6 (inclusive of 2, exclusive of 7)
+Print the entire list using slicing
+"""
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(numbers[0:4])
+print(numbers[-3:])
+print(numbers[2:7])
+print(numbers[:])
