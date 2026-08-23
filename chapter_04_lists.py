@@ -111,10 +111,33 @@ Print the first 4 numbers (using slicing)
 Print the last 3 numbers (using slicing)
 Print the numbers from index 2 to 6 (inclusive of 2, exclusive of 7)
 Print the entire list using slicing
-"""
+
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 print(numbers[0:4])
 print(numbers[-3:])
 print(numbers[2:7])
 print(numbers[:])
+
+_____________________________________
+
+Next: Practice 2 of 7 – insert() and remove()
+
+Create this list:
+animals = ["dog", "cat", "elephant"]
+Then do the following:
+Use .insert() to add "rabbit" at index 1
+Use .insert() to add "lion" at the beginning of the list
+Use .remove() to delete "cat"
+Print the final list
+"""
+animals = ["dog", "cat", "elephant"]
+
+animals.insert(1,"rabbit")
+print(animals)
+
+animals.insert(0,"lion")
+print(animals)
+
+animals.remove("cat")
+print(animals)
