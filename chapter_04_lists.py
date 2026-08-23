@@ -233,7 +233,7 @@ Then do the following:
 4. Print the letter "E" (center item)
 5. Print the letter "I" (last item)
 6. Change the letter "A" to "Z" and print the updated grid
-"""
+
 #1: 
 grid = [
     ["A", "B", "C"],
@@ -251,3 +251,39 @@ print(grid[2][-1])
 #6: 
 grid[0][0] = "Z"
 print (grid)
+_____________________________________
+Final Practice: Practice 7 of 7 – Putting It Together
+
+1. Create an empty list called shopping_list.
+
+Then write code that does the following step by step:
+
+2. Add these items using .append(): "milk", "bread", "eggs"
+
+3.Insert "butter" at the beginning of the list
+
+4.Remove "bread" from the list
+
+5.Print how many items are currently in the list (len())
+
+6.Print the final shopping list
+
+7.Create a new list that contains the shopping list repeated 2 times and print it
+"""
+#1:
+shopping_list = []
+#2:
+shopping_list.append("milk")
+shopping_list.append("bread")
+shopping_list.append("eggs")
+#3:
+shopping_list.insert(0,"butter")
+#4:
+shopping_list.remove("bread")
+#5:
+print(len(shopping_list))
+#6:
+print(shopping_list)
+#7:
+doubled_shopping_list = shopping_list * 2
+print(doubled_shopping_list)
