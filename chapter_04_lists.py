@@ -175,7 +175,7 @@ Then do the following:
 2. Use .count() to count how many times "blue" appears and print it
 
 3. Try to use .index() to find "purple" (this will cause an error — just write the line and leave a comment explaining what happens)
-"""
+
 colors = ["red", "blue", "green", "blue", "yellow", "blue"]
 #1:
 print("The index of the first word blue is: " + str(colors.index("blue")))
@@ -185,7 +185,35 @@ print("Number of times blue appear in list: " + str(colors.count("blue")))
 try: 
    print(colors.index("purple"))
 
-except:ValueError
-     # .index() raises a ValueError if the item does not exist in the list.    
-    
-    
+except ValueError:
+    print("ValueError: 'purple' is not in the list")
+     # .index() raises a ValueError if the item does not exist in the list.  
+       
+ ____________________________________
+ Practice 5 of 7 – List Concatenation & Replication
+ ____________________________________
+ 
+1. Create these two lists:
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+Then do the following:
+
+2. Create a new list that combines list1 and list2 (concatenation) and print it
+
+3. Create a new list that repeats list1 three times (replication) and print it
+
+4. Print list1 and list2 again to show they were not changed   
+"""
+#1:
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+#2:
+combined_list = list1 + list2
+print(combined_list)  
+#3:
+repeated_list1 = list1 * 3
+print(repeated_list1)
+#4:
+print(list1)
+print(list2)
