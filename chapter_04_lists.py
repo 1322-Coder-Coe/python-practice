@@ -130,7 +130,7 @@ Use .insert() to add "rabbit" at index 1
 Use .insert() to add "lion" at the beginning of the list
 Use .remove() to delete "cat"
 Print the final list
-"""
+
 animals = ["dog", "cat", "elephant"]
 
 animals.insert(1,"rabbit")
@@ -141,3 +141,24 @@ print(animals)
 
 animals.remove("cat")
 print(animals)
+
+_____________________________________
+Next: Practice 3 of 7 – sort() and sorted()
+_____________________________________
+Create this list:
+numbers = [4, 1, 7, 3, 9, 2]
+Then do the following:
+Use the .sort() method to sort the list in ascending order and print it
+Create a new list with the numbers sorted in descending order (highest to lowest) and print it
+Print the original list again to show whether it was changed or not.
+"""
+numbers = [4, 1, 7, 3, 9, 2]
+#1:
+numbers.sort()
+print(numbers)
+#2:
+descending_numbers = sorted(numbers, reverse = True)
+print(descending_numbers)
+#3:
+print(numbers)
+
