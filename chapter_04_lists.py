@@ -204,7 +204,7 @@ Then do the following:
 3. Create a new list that repeats list1 three times (replication) and print it
 
 4. Print list1 and list2 again to show they were not changed   
-"""
+
 #1:
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
@@ -217,3 +217,37 @@ print(repeated_list1)
 #4:
 print(list1)
 print(list2)
+_____________________________________
+Practice 6 of 7 – Nested Lists (Basic)
+_____________________________________
+1. Create this nested list:
+grid = [
+    ["A", "B", "C"],
+    ["D", "E", "F"],
+    ["G", "H", "I"]]
+    
+Then do the following:
+
+2. Print the entire nested list
+3. Print the second row (["D", "E", "F"])
+4. Print the letter "E" (center item)
+5. Print the letter "I" (last item)
+6. Change the letter "A" to "Z" and print the updated grid
+"""
+#1: 
+grid = [
+    ["A", "B", "C"],
+    ["D", "E", "F"],
+    ["G", "H", "I"]]
+    
+#2:
+print(grid)
+#3:
+print(grid[1])
+#4:
+print(grid[1][1])
+#5:
+print(grid[2][-1])
+#6: 
+grid[0][0] = "Z"
+print (grid)
