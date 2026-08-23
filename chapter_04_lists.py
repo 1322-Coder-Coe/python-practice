@@ -151,7 +151,7 @@ Then do the following:
 Use the .sort() method to sort the list in ascending order and print it
 Create a new list with the numbers sorted in descending order (highest to lowest) and print it
 Print the original list again to show whether it was changed or not.
-"""
+
 numbers = [4, 1, 7, 3, 9, 2]
 #1:
 numbers.sort()
@@ -161,4 +161,31 @@ descending_numbers = sorted(numbers, reverse = True)
 print(descending_numbers)
 #3:
 print(numbers)
+_____________________________________
 
+Practice 4 of 7 – index() and count()
+_____________________________________
+Create this list:
+
+colors = ["red", "blue", "green", "blue", "yellow", "blue"]
+Then do the following:
+
+1. Use .index() to find the position of the first "blue" and print it
+
+2. Use .count() to count how many times "blue" appears and print it
+
+3. Try to use .index() to find "purple" (this will cause an error — just write the line and leave a comment explaining what happens)
+"""
+colors = ["red", "blue", "green", "blue", "yellow", "blue"]
+#1:
+print("The index of the first word blue is: " + str(colors.index("blue")))
+#2:
+print("Number of times blue appear in list: " + str(colors.count("blue")))
+#3:
+try: 
+   print(colors.index("purple"))
+
+except:ValueError
+     # .index() raises a ValueError if the item does not exist in the list.    
+    
+    
