@@ -33,13 +33,38 @@ Handle lists with 0 items, 1 item, 2 items, and more than 2 items correctly
 Do not use the join() method for this exercise (practice building the string manually)
 """
 def comma_code(lists):
+    # Edge case 1: Empty list
     if len(lists) == 0:
         return ""
-        
-    elif len(lists) == 1:
-        return (lists[0])
-
-print(comma_code([]))   
-           
-print(comma_code(["dog"]))   
     
+    # Edge case 2: Single-item list
+    elif len(lists) == 1:
+        return lists[0]
+    
+    # Edge case 3: Two-item list
+    elif len(lists) == 2:
+        return lists[0] + ", and " + lists[1]
+    
+    # General case: Three or more items
+    else:
+        results = ""
+        # Loop through all items EXCEPT the very last one
+        for i in range(len(lists) - 1):
+            results += lists[i] + ", "
+            
+        # Add the word "and" and the final item at the end
+        results += "and " + lists[-1]
+        return results
+
+# Test cases
+print(comma_code(['apples', 'bananas', 'tofu', 'cats']))
+# Output: apples, bananas, tofu, and cats
+
+print(comma_code(['one']))
+# Output: one
+
+print(comma_code([]))
+# Output: (empty string)
+
+print(comma_code(['red', 'blue']))
+# Output: red, and blue
