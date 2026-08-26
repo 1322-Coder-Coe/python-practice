@@ -28,3 +28,10 @@ name → Evans Coe
 """
 for key,value in student.items():
     print(key, "->",value)
+"""
+_____________________________________
+Practice 5
+Add a new key 'city' with the value "Accra" to the student dictionary, then print the whole dictionary.
+"""
+student ['city'] = 'Accra'
+print(student)
