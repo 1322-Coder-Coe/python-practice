@@ -14,4 +14,10 @@ Practice 2
 Using the student dictionary, check if the key 'age' exists and print the result (True or False).
 """
 print('age' in student)
+"""
+_____________________________________
+Practice 3
+Use .get() to try to get the key 'grade'. If it doesn’t exist, return "No grade yet".
+"""
+print(student.get('grade','No grade yet'))
 
