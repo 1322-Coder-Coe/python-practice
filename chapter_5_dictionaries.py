@@ -20,4 +20,11 @@ Practice 3
 Use .get() to try to get the key 'grade'. If it doesn’t exist, return "No grade yet".
 """
 print(student.get('grade','No grade yet'))
-
+"""
+_____________________________________
+Practice 4
+Loop through the student dictionary and print each key and value in this format:
+name → Evans Coe
+"""
+for key,value in student.items():
+    print(key, "->",value)
