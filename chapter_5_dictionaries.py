@@ -35,3 +35,29 @@ Add a new key 'city' with the value "Accra" to the student dictionary, then prin
 """
 student ['city'] = 'Accra'
 print(student)
+"""
+_____________________________________
+Practice 6
+Create this nested dictionary:
+inventory = {
+    'apple': 10,
+    'banana': 25,
+    'orange': 15
+}
+Then:
+1.Print how many bananas there are
+2.Add 5 more apples
+3.Print the updated inventory
+"""
+inventory = {
+    'apple': 10,
+    'banana': 25,
+    'orange': 15
+}
+#1: 
+print("number of banana: " + str(inventory['banana']))
+#2.
+inventory['apple'] += 5
+print("number of apples: " + str(inventory['apple']))
+#3
+print(inventory)
