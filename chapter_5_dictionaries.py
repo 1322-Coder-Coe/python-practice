@@ -78,3 +78,31 @@ for i in s:
 
 # 2. Print the final dictionary outside the loop
 print(letter_count)
+
+"""
+_____________________________________
+Practice 8
+Create this nested dictionary:
+users = {
+    'alice': {'age': 25, 'city': 'Accra'},
+    'bob': {'age': 30, 'city': 'Kumasi'},
+    'carol': {'age': 22, 'city': 'Tamale'}
+}
+Then:
+1.Print Bob’s age
+2.Print Carol’s city
+3.Add a new user 'dave' with age 28 and city "Cape Coast"
+4.Print the whole users dictionary
+"""
+#0:
+users = {
+    'alice': {'age': 25, 'city': 'Accra'},
+    'bob': {'age': 30, 'city': 'Kumasi'},
+    'carol': {'age': 22, 'city': 'Tamale'}
+}
+#1:
+print(users['bob']['age'])
+#2:
+print(users['carol']['city'])
+users['dave'] = {'age': 28, 'city': 'Cape Coast'}
+print(users)
