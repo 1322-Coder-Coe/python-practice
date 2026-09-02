@@ -13,6 +13,10 @@ I am currently working through the early chapters and organizing all practice ex
 ├── chapter_02_flow_control.py
 ├── chapter_03_functions.py
 ├── chapter_04_lists.py
+├── chapter_04_Project_1.py
+├── chapter_5_dictionaries.py
+├── Chapter 5 Final Project.py
+├── Chapter_5_Short_Project.py
 └── README.md
 ```
 
@@ -21,7 +25,10 @@ I am currently working through the early chapters and organizing all practice ex
 | `chapter_01_python_basics.py` | Chapter 1 – Python Basics | `print()`, `input()`, variables, strings, `len()`, type conversion |
 | `chapter_02_flow_control.py` | Chapter 2 – Flow Control | `if`/`elif`/`else`, `while` & `for` loops, `break`, `continue`, `random` |
 | `chapter_03_functions.py` | Chapter 3 – Functions | Defining functions, parameters, `return`, scope, exception handling, Collatz project |
-| `chapter_04_lists.py` | Chapter 4 – Lists | Creating lists, indexing, looping over lists, `append()`, `in` operator |
+| `chapter_04_lists.py` | Chapter 4 – Lists | Creating lists, indexing, slicing, looping, `append()`, `insert()`, `remove()`, `sort()` |
+| `chapter_04_Project_1.py` | Chapter 4 – Project | Comma Code project |
+| `chapter_5_dictionaries.py` | Chapter 5 – Dictionaries | Dictionaries, `.get()`, `.setdefault()`, nested dictionaries, looping |
+| `Chapter 5 Final Project.py` | Chapter 5 – Project | Fantasy Game Inventory |
 
 ---
 
@@ -40,8 +47,9 @@ I am currently working through the early chapters and organizing all practice ex
 - [x] Chapter 2 – Flow Control
 - [x] Chapter 3 – Functions
 - [x] Chapter 4 – Lists
-- [ ] Chapter 5 – Dictionaries and Structuring Data
-- [ ] Chapter 6 – Manipulating Strings
+- [x] Chapter 5 – Dictionaries and Structuring Data
+- [ ] Chapter 6 – Manipulating Strings *(currently learning)*
+- [ ] Chapter 7 – Pattern Matching with Regular Expressions
 - [ ] ... and more to come
 
 ---
