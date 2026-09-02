@@ -23,3 +23,14 @@ Print the final result
 message = "  Hello World  "
 message = message.strip().replace("World", "Python")
 print(message)
+"""
+Practice 3
+Create this list:
+words = ["I", "love", "Python"]
+Join the words into one sentence separated by spaces, so the result is:
+I love Python
+Print the final sentence.
+"""
+words = ["I", "love", "Python"]
+words= " ".join(words)
+print(words)
